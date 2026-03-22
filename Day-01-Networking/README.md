@@ -1,161 +1,141 @@
-🌐 Day 1 – Networking Basics for DevOps | #90DaysOfDevOps 🚀
+🌐 Day 1 – Networking Basics for DevOps 🚀
+📅 #90DaysOfDevOps | Week 1: Networking
+<p align="center"> <img src="https://img.shields.io/badge/DevOps-Day%201-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Focus-Networking-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" /> </p>
+👨‍💻 About
 
-📅 Week 1 Focus: Networking
-👨‍💻 Author: Rameshwar Mane
-🎯 Goal: Build strong networking fundamentals for DevOps
+Hi, I'm Rameshwar Mane 👋
+Documenting my #90DaysOfDevOps journey with practical learning and real-world concepts.
+
+🎯 Goal: Become a DevOps Engineer by mastering Networking, Cloud & Automation.
 
 📌 Topics Covered
-🌍 How Internet Works
+🌍 Internet Working
 🔗 Protocols & Ports
-🧱 OSI Model vs TCP/IP Model
-🌐 IP Address (IPv4 & IPv6 + Subnet)
-🔑 IP vs MAC Address
+🧱 OSI vs TCP/IP Model
+🌐 IP Addressing
+🔑 IP vs MAC
 🔀 Routers & Switches
 💻 Networking Commands
-☁️ AWS EC2 & Security Groups
-🌍 1. How Does the Internet Work?
-
-The internet is a global network of interconnected computers.
-
-🔄 Flow:
-User enters URL (e.g., google.com)
-DNS converts domain → IP address
-Request travels through routers
+☁️ AWS EC2 Basics
+🌍 1. How Internet Works
+<p align="center"> <img src="https://media.giphy.com/media/3o7TKsQ8DM0X7A8E6Q/giphy.gif" width="500"/> </p>
+🔄 Flow Animation (Step-by-Step)
+User → DNS → IP Address → Router → Server → Response → Browser
+🧠 Explanation:
+You enter URL (google.com)
+DNS converts → IP
+Request travels via routers
 Server processes request
-Response sent back to client
+Response returns to browser
 
-💡 Example:
-Browser = Client
-Server = Backend
-Internet = Communication medium
+💡 Client = Browser | Server = Backend
 
 🔗 2. Protocols & Ports
-
-Protocols are rules that define communication between systems.
-
-🔥 Common Protocols:
-Protocol	Port	Usage
-HTTP	80	Web traffic
-HTTPS	443	Secure web
-FTP	21	File transfer
+<p align="center"> <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="450"/> </p>
+Protocol	Port	Use
+HTTP	80	Website
+HTTPS	443	Secure site
 SSH	22	Remote login
-DNS	53	Domain resolution
+FTP	21	File transfer
+DNS	53	Domain → IP
 
-💡 DevOps Use Case:
+💡 DevOps:
 
-Deploy app → HTTP/HTTPS
-Connect server → SSH
+SSH → connect server
+HTTP → deploy app
 🧱 3. OSI vs TCP/IP Model
+<p align="center"> <img src="https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif" width="450"/> </p>
 🔹 OSI Model (7 Layers)
-Physical
-Data Link
-Network
-Transport
-Session
+Application
 Presentation
-Application
-
-💡 Example:
-
-Application → HTTP
-Transport → TCP
-Network → IP
-🔹 TCP/IP Model (4 Layers)
-Network Access
-Internet
+Session
 Transport
+Network
+Data Link
+Physical
+🔹 TCP/IP Model (4 Layers)
 Application
-⚡ Key Differences
-OSI Model	TCP/IP Model
-7 Layers	4 Layers
-Theoretical	Practical
-Learning model	Real-world usage
+Transport
+Internet
+Network Access
+⚡ Mapping
+OSI	TCP/IP
+Application	Application
+Transport	Transport
+Network	Internet
 🌐 4. IP Addressing
-🔹 IPv4
-Format: 192.168.1.1
-32-bit
-Limited addresses
-🔹 IPv6
-Format: 2001:0db8:85a3::8a2e:0370:7334
-128-bit
-Future-ready
-🔹 Subnetting
+<p align="center"> <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="450"/> </p>
+🔸 IPv4
+192.168.1.1
+🔸 IPv6
+2001:db8::1
+🔹 Subnet Concept
+Network → Subnet → Devices
 
-Used to divide networks into smaller parts:
+✔ Better performance
+✔ Better security
 
-Improves performance
-Enhances security
-🔑 5. IP Address vs MAC Address
-IP Address	MAC Address
-Logical	Physical
-Changeable	Fixed
-Assigned by network	Assigned by manufacturer
+🔑 5. IP vs MAC Address
+IP Address  → Logical → Changes
+MAC Address → Physical → Fixed
 
 💡 Analogy:
 
-IP = Current address
+IP = Current location
 MAC = Permanent identity
-🔀 6. Routers & Switches
+🔀 6. Router vs Switch
+<p align="center"> <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" width="450"/> </p>
 Router	Switch
 Connects networks	Connects devices
-Uses IP address	Uses MAC address
-Layer 3 device	Layer 2 device
-💻 7. Networking Commands Cheat Sheet
+Uses IP	Uses MAC
+Layer 3	Layer 2
+💻 7. Networking Commands
 # Check connectivity
 ping google.com
 
 # Trace route
-tracert google.com   # Windows
-traceroute google.com  # Linux/Mac
+tracert google.com
+traceroute google.com
 
 # Network stats
 netstat -an
 
-# HTTP request
+# API request
 curl https://example.com
 
 # DNS lookup
 nslookup google.com
 dig google.com
 ☁️ 8. AWS EC2 & Security Groups
-EC2 = Virtual machine in cloud
-Security Group = Firewall
-🔐 Example Rules:
-Allow port 22 → SSH
-Allow port 80 → HTTP
-Allow port 443 → HTTPS
+<p align="center"> <img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="450"/> </p>
+🔐 Security Rules
+Port	Purpose
+22	SSH
+80	HTTP
+443	HTTPS
 🎯 Conclusion
 
-Networking is the backbone of DevOps.
+Networking is the foundation of DevOps 🚀
 
-Understanding:
+✔ Understand protocols
+✔ Learn IP addressing
+✔ Practice commands
+✔ Move to cloud (AWS next)
 
-IP addressing
-Protocols
-OSI Model
-Routing
-
-👉 Gives you a strong foundation for cloud & DevOps 🚀
-
-📢 My #90DaysOfDevOps Journey
-
-This is Day 1 – Networking Basics
-
-🔜 Coming Next:
-
-AWS EC2 Hands-on
-Security Groups Deep Dive
-Docker Basics
+📢 Progress
+✅ Day 1: Networking
+🔜 Day 2: AWS EC2
+🔗 Connect
+GitHub: https://github.com/rameshwar8767
+LinkedIn: (Add link)
 ⭐ Support
 
-If you found this helpful:
+If you like this:
 
-⭐ Star this repo
-🔁 Share with others
-🤝 Connect with me
-🔗 Connect With Me
-GitHub: (Add your link)
-LinkedIn: (Add your link)
-📌 Tags
+⭐ Star repo
+🔁 Share
+💬 Follow journey
 
-#DevOps #Networking #90DaysOfDevOps #AWS #BeginnerFriendly
+🚀 Next
+
+👉 AWS EC2 Hands-on Guide
