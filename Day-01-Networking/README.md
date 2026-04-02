@@ -1,4 +1,4 @@
-<!-- Animated Header Banner -->
+Animated Header Banner
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=90%20Days%20of%20DevOps&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Week%201%20%7C%20Networking%20Fundamentals&descAlignY=60&descSize=20" width="100%"/>
