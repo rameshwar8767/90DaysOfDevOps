@@ -45,28 +45,7 @@ This week we dive deep into **Networking** — the invisible backbone that power
 
 <div align="center">
 
-```
-  YOU (Browser)
-       │
-       ▼
-  ┌─────────────┐
-  │  Your ISP   │  ← Internet Service Provider
-  └──────┬──────┘
-         │
-         ▼
-  ┌─────────────────────────────────┐
-  │      The Internet Backbone      │
-  │  (Fiber cables, Undersea cables,│
-  │   Satellite links, Data Centers)│
-  └──────────────┬──────────────────┘
-                 │
-         ┌───────┴────────┐
-         ▼                ▼
-   ┌───────────┐    ┌───────────┐
-   │  DNS      │    │  Server   │
-   │ Resolver  │    │ (Website) │
-   └───────────┘    └───────────┘
-```
+![alt text](image.png)
 
 </div>
 
@@ -125,28 +104,7 @@ The **OSI (Open Systems Interconnection)** model is a conceptual framework that 
 
 <div align="center">
 
-```
- OSI Model (7 Layers)              TCP/IP Model (4 Layers)
-┌───────────────────────┐         ┌───────────────────────┐
-│  7. Application       │ ◄──────►│  Application          │
-├───────────────────────┤         │  (HTTP, SSH, DNS, FTP) │
-│  6. Presentation      │         └───────────────────────┘
-├───────────────────────┤                    │
-│  5. Session           │                    │
-├───────────────────────┤         ┌───────────────────────┐
-│  4. Transport         │ ◄──────►│  Transport            │
-│  (TCP / UDP)          │         │  (TCP, UDP)           │
-├───────────────────────┤         └───────────────────────┘
-│  3. Network           │ ◄──────►┌───────────────────────┐
-│  (IP, Routing)        │         │  Internet             │
-├───────────────────────┤         │  (IP, ICMP, ARP)      │
-│  2. Data Link         │         └───────────────────────┘
-│  (MAC, Switches)      │ ◄──────►┌───────────────────────┐
-├───────────────────────┤         │  Network Access       │
-│  1. Physical          │         │  (Ethernet, Wi-Fi)    │
-│  (Cables, Signals)    │         └───────────────────────┘
-└───────────────────────┘
-```
+![alt text](OSI.png)
 
 </div>
 
@@ -257,23 +215,7 @@ Analogy:
 
 <div align="center">
 
-```
-INTERNET
-    │
-┌───┴────┐
-│ ROUTER │  ← Works at Layer 3 (Network)
-│        │    Routes traffic between networks
-│        │    Has a public IP (WAN) + private IP (LAN)
-└───┬────┘
-    │
-┌───┴────────┐
-│  SWITCH    │  ← Works at Layer 2 (Data Link)
-│            │    Connects devices within the same network
-│            │    Uses MAC addresses
-└────────────┘
-    │    │    │
-   PC1  PC2  Server
-```
+![alt text](Routers.png)
 
 </div>
 
